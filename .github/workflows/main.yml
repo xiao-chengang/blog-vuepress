@@ -21,11 +21,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: checkout
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: setup-node
       - uses: actions/setup-node@v2
         with: # 输入这个`actions`需要的参数，例如版本号
           node-version: '14'
